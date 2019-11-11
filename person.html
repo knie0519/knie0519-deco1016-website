@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Person</title>
+  <link rel="stylesheet" href="person__styles.css">
+</head>
+
+<body>
+  <header>
+    <!-- logo testing -->
+    <img class="logo" src="images/logo2.png" alt="logo" style="width:150px; height:50px;">
+    <!-- <img class="logo" src="images/logo.png" alt="logo" style="width:70px; height:70px;"> -->
+
+    <!-- navbar -->
+    <nav>
+      <ul class="nav__links">
+        <!-- correct link to replace the "#" below -->
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="cta" href="#"><button>Account</button></a>
+    <a onclick="openNav()" class="menu" href="#"><button class="menu">Menu</button></a>
+  </header>
+  <div id="mobile__menu" class="overlay">
+    </label>
+    <a class="close" onclick="closeNav()">&times;</a>
+    <div class="overlay__content">
+      <!-- correct link to replace the "#" below -->
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+      <a class="sign2" href="#">Account</a>
+    </div>
+  </div>
+
+  <!-- card and bills -->
+  <div class="items">
+    <img class="card" src="images/card.png" alt="card" style="width:520px; height:470px;">
+    <img class="watermark" src="images/watermark.png" alt="watermark" style="width:1100px; height:600px;">
+    <img class="bills" src="images/bills.png" alt="bills" style="width:410px; height:490px;">
+  </div>
+
+  <script type="text/javascript" src="mobile.js"></script>
+</body>
+
+</html>

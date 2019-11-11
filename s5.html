@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sign up__5</title>
+  <link rel="stylesheet" href="s5__bigscreen.css" media="screen and (min-width:900px)" type="text/css">
+  <link rel="stylesheet" href="s5__smallscreen.css" media="screen and (max-width:900px)" type="text/css">
+</head>
+
+<body>
+  <div class="page">
+    <!-- left bar -->
+    <div class="left__bar">
+      <!-- five circles -->
+      <a href="s1.html">
+        <div class="recent"></div>
+      </a>
+      <a href="s2.html">
+        <div class="recent"></div>
+      </a>
+      <a href="s3.html">
+        <div class="recent"></div>
+      </a>
+      <a href="s4.html">
+        <div class="recent"></div>
+      </a>
+      <a href="s5.html">
+        <div class="recent"></div>
+      </a>
+    </div>
+    <!-- right bar -->
+    <div class="right__bar">
+      <!-- title question -->
+      <div class="question">
+        Link Your Card:
+      </div>
+
+      <!-- method 1 -->
+      <div class="form-group1">
+        <label id="m1">Method 1: Using Card Detail</label>
+        <!-- left card -->
+        <div class="form-group">
+          <label id="cn">Card number</label>
+          <input type="cn" name="cn" class="cn" placeholder="0000 0000 0000 0000">
+          <label id="ch">Card holder</label>
+          <input type="ch" name="ch" class="ch" placeholder="Name">
+          <label id="ed">Expiry date</label>
+          <input type="ed" name="ed" class="ed" placeholder="MM/YYYY">
+        </div>
+
+      </div>
+      <!-- method 2 -->
+      <div class="form-group">
+        <label id="m2">Method 2: Using Bank Account</label>
+        <!-- bank selection -->
+        <div class="form-group">
+          <label id="syb">Select your bank:</label>
+          <select id="bank" name="bank">
+            <option value="CWB">Commonwealth</option>
+            <option value="ANZ">ANZ</option>
+            <option value="BA">Bank Australia</option>
+            <option value="PB">Police Bank</option>
+            <option value="QB">Qudos Bank</option>
+          </select>
+        </div>
+        <!-- right card -->
+        <div class="form-group">
+          <label id="name">Name</label>
+          <input type="name" name="name" class="name" placeholder="Name">
+          <label id="bsb">BSB</label>
+          <input type="bsb" name="bsb" class="bsb" placeholder="000-000">
+          <label id="an">Account number</label>
+          <input type="an" name="an" class="an" placeholder="123456789">
+        </div>
+      </div>
+      <!-- move -->
+      <div class="move">
+        <a href="s4.html"><button class="backword"><i class="arrow left"></i></button></a>
+        <a href="welcome.html"><button class="forward"><i class="arrow right"></i></button></a>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="s4__script.js">
+  </script>
+</body>
+
+</html>

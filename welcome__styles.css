@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39|Overpass:700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39|Overpass:400i&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.left__bar ,.right__bar {
+  animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+* {
+  background-color: #44384A;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  height: 780px;
+}
+
+.page > div {
+  background-color: #44384A;
+  color: rgba(253, 145, 38);
+}
+
+.page > div:nth-child(odd) {
+  background-color: #FD9326;
+  color: #44384A;
+}
+
+/* left bar */
+
+.left__bar {
+  display: grid;
+  grid-template-columns: repeat(1, 3);
+  grid-auto-columns: 80px;
+  grid-auto-rows: 80px;
+  grid-gap: 20px;
+}
+/* five circles */
+.left__bar > div, a {
+  margin-top: 170px;
+  margin-left: 105px;
+  border: #FD9326 6px solid;
+  padding: 20px;
+  border-radius: 150px;
+  cursor: pointer;
+}
+/* show recent step */
+.left__bar a,.recent {
+  border: rgb(190, 253, 147) 6px solid;
+}
+
+/* image */
+.logo {
+  display: block;
+  width: 300px;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+/* welcome text */
+.text {
+  margin-left: 420px;
+  margin-top: 60px;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(253, 145, 38);
+  font-size: 55px;
+}
+
+.person {
+  margin-top: 80px;
+}
+
+.button a {
+  background: #FD9326;
+  margin-left: 16%;
+  padding: 30px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-left: 20px;
+
+}
+
+/* button */
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  color: white;
+  margin-left: 20px;
+  background-color: rgba(253, 147, 38, 1);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer; /* the icon changes to a pointer when mouse over */
+  transition: all 0.3s ease 0s;
+}
+
+/* button effects */
+button:hover {
+  background-color: rgba(253, 147, 38, 0.5);
+  /* color fade when mouse over by using transparency */
+  font-size: 40px;
+  text-shadow: 3px 2px #44384A;
+  /* text style changes when mouse over */
+}
+

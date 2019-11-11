@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39|Overpass:700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39|Overpass:400i&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* a simple animation when user open the page */
+.items, .nav__links {
+  animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #44384A;
+}
+
+/* nav part */
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo {
+  cursor: pointer; /* the icon changes to a pointer when mouse over */
+  margin-right: auto;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #FD9326;
+}
+
+.menu {
+  display: none;
+}
+
+/* card and bills */
+.card {
+  margin-top: 80px;
+  margin-left: 130px;
+}
+
+.bills {
+  transform: translate(780px, -1100px);
+}
+
+/* watermark */
+.watermark {
+  opacity: 0.1;
+  transform: translate(370px, -520px);
+}
+
+/* button style */
+
+li, a, button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(253, 147, 38, 1);
+  border: rgb(253, 147, 38, 1) solid;
+  border-width: 5px;
+  border-radius: 15px;
+  cursor: pointer; /* the icon changes to a pointer when mouse over */
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  border: rgb(253, 147, 38, 0) solid;
+  background-color: rgba(253, 147, 38, 0.7); 
+  border-width: 5px;
+  /* color fade when mouse over by using transparency */
+}
+
+@media only screen and (max-width: 810px) {
+  .nav__links, .cta {
+    display: none;
+  }
+  .menu {
+    display: inherit;
+  }
+}
+
+/* Mobile Nav */
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #44384A;
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay__content .sign2 {
+  padding: 15px;
+  background: none;
+  outline: none;
+  border: rgb(253, 147, 38) solid;
+  border-radius: 20px;
+  border-width: 5px;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 28px;
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #FD9326;
+}
+
+.overlay .close { 
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-width: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
